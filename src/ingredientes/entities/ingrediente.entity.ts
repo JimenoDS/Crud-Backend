@@ -14,4 +14,11 @@ export class Ingrediente {
   @Column({ nullable: true })
   unidad: string;
 
+  // ✅ COLUMNA AÑADIDA
+  @Column({ type: 'decimal', precision: 10, scale: 3, nullable: true })
+  peso: number;
+
+  // ✅ COLUMNA AÑADIDA
+  @Column({ nullable: true })
+  unidadPeso: string;
 }

@@ -12,4 +12,14 @@ export class CreateIngredienteDto {
   @IsString()
   @IsOptional()
   unidad?: string;
+
+  // ✅ CAMPO AÑADIDO
+  @IsNumber()
+  @IsOptional() // El peso puede ser opcional
+  peso?: number;
+
+  // ✅ CAMPO AÑADIDO
+  @IsString()
+  @IsOptional() // La unidad de peso también puede ser opcional
+  unidadPeso?: string;
 }
